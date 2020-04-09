@@ -14,7 +14,7 @@ func (t test) Len() int {
 }
 
 func (t test) Less(i, j int) bool {
-	return t.array[i] <= t.array[j]
+	return t.array[i] < t.array[j]
 }
 
 func (t test) Swap(i, j int) {
